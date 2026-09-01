@@ -12,13 +12,6 @@ model weight, or production metric. All API detections are synthetic. One owner-
 de-identified prototype reference frame is included only to document the early visual direction; it
 is not a benchmark, training example, or production safety record.
 
-## Interface
-
-<p align="center">
-  <img src="docs/screenshots/index-desktop.png" width="73%" alt="PPE review workflow with licensed reference photo on desktop">
-  <img src="docs/screenshots/index-mobile.png" width="23%" alt="PPE review workflow with licensed reference photo on mobile">
-</p>
-
 ## Media boundary
 
 The page uses one credited Pexels photo only as presentation context. The API never receives it; no
