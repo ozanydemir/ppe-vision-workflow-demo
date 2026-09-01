@@ -7,9 +7,10 @@ A public-safe demonstration of the workflow around an industrial PPE detection m
 synthetic detection events, aggregates helmet/no-helmet observations, identifies low-confidence
 items for review, and exposes the evidence through FastAPI and a responsive index dashboard.
 
-This repository contains no private workplace image, employee, face, identity, camera, site, dataset,
-label file, video, model weight, or production metric. One credited Pexels stock photo provides
-presentation context only; the demo never analyzes it and all detections are synthetic.
+This repository contains no private dataset, raw video, employee identity, camera or site identifier,
+model weight, or production metric. All API detections are synthetic. One owner-authorized,
+de-identified prototype reference frame is included only to document the early visual direction; it
+is not a benchmark, training example, or production safety record.
 
 ## Interface
 
@@ -22,6 +23,17 @@ presentation context only; the demo never analyzes it and all detections are syn
 
 The page uses one credited Pexels photo only as presentation context. The API never receives it; no
 inference, identity, or safety conclusion is made from the image. See `ASSET_CREDITS.md`.
+
+## Limited prototype reference
+
+<p align="center">
+  <img src="docs/reference/deidentified-ppe-reference-frame.png" width="344" alt="De-identified, low-resolution prototype PPE detection reference frame">
+</p>
+
+This is the sole owner-authorized industrial reference frame in the repository. It is deliberately
+low resolution, contains no visible face, person name, camera identifier, site name, or production
+metadata, and is not used by the demo API. No additional factory imagery belongs in the public
+repository without a fresh privacy and authorization review.
 
 ## Architecture
 
