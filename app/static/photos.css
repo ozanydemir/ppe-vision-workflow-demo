@@ -1,0 +1,19 @@
+/* The licensed photo is never passed through the demo's detector. */
+.scene {
+  background: linear-gradient(90deg, rgba(8, 20, 34, .18), rgba(8, 20, 34, .02)), url("/static/assets/helmet-workshop.jpg") center 62% / cover !important;
+}
+.scene > :not(.scene-label) { visibility: hidden; }
+.scene-label { z-index: 1; box-shadow: 0 12px 28px rgba(22, 36, 58, .18); }
+.scene::after {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  max-width: 230px;
+  padding: 9px 11px;
+  border-radius: 10px;
+  background: rgba(255, 253, 248, .94);
+  color: #16243a;
+  content: "Licensed stock photo · no model inference was run on this image";
+  font: 700 11px/1.35 "Segoe UI", Arial, sans-serif;
+}
+@media (max-width: 680px) { .scene { background-position: center 58% !important; } .scene::after { top: 12px; right: 12px; max-width: 185px; font-size: 10px; } }

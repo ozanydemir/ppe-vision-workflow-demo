@@ -1,0 +1,18 @@
+/* Keep nested PPE labels readable instead of stacking them at the same origin. */
+.person-box { font-size: 0; }
+
+.person-box::after {
+  position: absolute;
+  top: -24px;
+  left: -2px;
+  padding: 3px 5px;
+  border: 1px solid currentColor;
+  background: var(--paper);
+  color: inherit;
+  content: "person";
+  font: 700 10px Consolas, monospace;
+  white-space: nowrap;
+}
+
+.p1 .person-box::after { content: "person · 0.96"; }
+.p2 .person-box::after { content: "person · 0.89"; }
